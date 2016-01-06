@@ -11,6 +11,11 @@ import UIKit
 
 class WritngViewController : UIViewController
 {
+    @IBAction func changeToFriends(sender: UIButton)
+    {
+        performSegueWithIdentifier("toFriends", sender:
+                sender)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

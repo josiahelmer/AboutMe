@@ -20,6 +20,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGX-HF-Nd5">
                                 <rect key="frame" x="277" y="285" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="ChangeToHome:" destination="3h2-DY-ynR" eventType="touchUpInside" id="EzG-7K-tNR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.11877076282170318" blue="0.16292510500123347" alpha="1" colorSpace="calibratedRGB"/>
@@ -30,7 +33,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tQA-fq-jbj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136" y="804"/>
+            <point key="canvasLocation" x="134" y="721"/>
         </scene>
         <!--About Me-->
         <scene sceneID="tne-QT-ifu">
@@ -45,27 +48,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wo-pI-3Bd">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <rect key="frame" x="184" y="346" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="changeToWriting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k1A-sH-wYY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.29277661980000003" green="0.67887863010000005" blue="0.23483897349999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="changeToWriting" destination="7Wo-pI-3Bd" id="WjY-H3-86y"/>
                         <segue destination="KSs-C4-eOU" kind="presentation" identifier="toWriting" id="asN-CD-5tH"/>
-                        <segue destination="3h2-DY-ynR" kind="presentation" identifier="toVideogames" id="lZ4-kd-Hbk"/>
-                        <segue destination="dqa-tf-NuR" kind="presentation" identifier="toFriends" id="kjF-2m-U0r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136" y="-38"/>
+            <point key="canvasLocation" x="134" y="-44"/>
         </scene>
         <!--Writng-->
         <scene sceneID="seT-oV-eiu">
             <objects>
-                <viewController title="Writng" id="KSs-C4-eOU" customClass="WritingViewController" sceneMemberID="viewController">
+                <viewController title="Writng" id="KSs-C4-eOU" customClass="WritngViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PZq-1k-ur5"/>
                         <viewControllerLayoutGuide type="bottom" id="kGf-de-gIC"/>
@@ -75,16 +80,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKD-wx-4VP">
-                                <rect key="frame" x="282" y="285" width="46" height="30"/>
+                                <rect key="frame" x="184" y="353" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="changeToFriends:" destination="KSs-C4-eOU" eventType="touchUpInside" id="REa-yM-Hdg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.16463358986842358" green="0.29488511080560076" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="dqa-tf-NuR" kind="presentation" identifier="toFriends" id="U6H-Tv-b4q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="si7-3V-BND" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="680" y="-38"/>
+            <point key="canvasLocation" x="703" y="-44"/>
         </scene>
         <!--Friends-->
         <scene sceneID="tNc-Pf-3kB">
@@ -99,17 +110,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auy-WO-Jy0">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <rect key="frame" x="184" y="353" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="ChangeToVideoGamessenderUIButton:" destination="dqa-tf-NuR" eventType="touchUpInside" id="JgJ-98-xUd"/>
+                                    <action selector="changeToVideogames:" destination="dqa-tf-NuR" eventType="touchUpInside" id="W8v-aV-9dI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.88803859422415354" blue="0.1297727589463864" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="0.020100812986999284" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="3h2-DY-ynR" kind="presentation" identifier="toVideogames" id="65v-aa-Xea"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDD-N6-8yf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="680" y="804"/>
+            <point key="canvasLocation" x="711" y="870"/>
         </scene>
     </scenes>
 </document>

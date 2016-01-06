@@ -11,6 +11,12 @@ import UIKit
 
 class FriendViewController : UIViewController
 {
+@IBAction func changeToVideogames(sender: UIButton)
+{
+    performSegueWithIdentifier("toRunnning", sender:
+            sender)
+}
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

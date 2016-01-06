@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBAction func changeToWriting(sender: UIButton)
+    {
+        performSegueWithIdentifier("toWriting", sender: sender)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

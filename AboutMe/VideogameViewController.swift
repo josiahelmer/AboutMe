@@ -11,6 +11,14 @@ import UIKit
 
 class VideogameViewController : UIViewController
 {
+    
+
+@IBAction func ChangeToHome(sender: UIButton)
+{
+    performSegueWithIdentifier("toHome", sender:
+            sender)
+}
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
