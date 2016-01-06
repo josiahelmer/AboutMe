@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Qy9-7x-eb1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8FQ-wW-JcJ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGX-HF-Nd5">
@@ -24,10 +24,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.11877076282170318" blue="0.16292510500123347" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toHome" id="3m3-Hc-9Gk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tQA-fq-jbj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="94" y="632"/>
+            <point key="canvasLocation" x="136" y="804"/>
         </scene>
         <!--About Me-->
         <scene sceneID="tne-QT-ifu">
@@ -38,7 +41,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wo-pI-3Bd">
@@ -48,10 +51,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.29277661980000003" green="0.67887863010000005" blue="0.23483897349999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="KSs-C4-eOU" kind="presentation" identifier="toWriting" id="asN-CD-5tH"/>
+                        <segue destination="3h2-DY-ynR" kind="presentation" identifier="toVideogames" id="lZ4-kd-Hbk"/>
+                        <segue destination="dqa-tf-NuR" kind="presentation" identifier="toFriends" id="kjF-2m-U0r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="94" y="-64"/>
+            <point key="canvasLocation" x="136" y="-38"/>
         </scene>
         <!--Writng-->
         <scene sceneID="seT-oV-eiu">
@@ -62,7 +71,7 @@
                         <viewControllerLayoutGuide type="bottom" id="kGf-de-gIC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gbb-kv-ifo">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKD-wx-4VP">
@@ -75,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="si7-3V-BND" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="738" y="-64"/>
+            <point key="canvasLocation" x="680" y="-38"/>
         </scene>
         <!--Friends-->
         <scene sceneID="tNc-Pf-3kB">
@@ -86,7 +95,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ELQ-Df-7rc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bwN-2k-AFh">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auy-WO-Jy0">
@@ -100,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDD-N6-8yf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="738" y="632"/>
+            <point key="canvasLocation" x="680" y="804"/>
         </scene>
     </scenes>
 </document>
