@@ -8,7 +8,7 @@
         <!--Videogames-->
         <scene sceneID="H4E-WL-pBj">
             <objects>
-                <viewController title="Videogames" id="3h2-DY-ynR" sceneMemberID="viewController">
+                <viewController title="Videogames" id="3h2-DY-ynR" customClass="VideogameViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="57g-4z-8Qt"/>
                         <viewControllerLayoutGuide type="bottom" id="Qy9-7x-eb1"/>
@@ -56,7 +56,7 @@
         <!--Writng-->
         <scene sceneID="seT-oV-eiu">
             <objects>
-                <viewController title="Writng" id="KSs-C4-eOU" sceneMemberID="viewController">
+                <viewController title="Writng" id="KSs-C4-eOU" customClass="WritingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PZq-1k-ur5"/>
                         <viewControllerLayoutGuide type="bottom" id="kGf-de-gIC"/>
@@ -80,7 +80,7 @@
         <!--Friends-->
         <scene sceneID="tNc-Pf-3kB">
             <objects>
-                <viewController title="Friends" id="dqa-tf-NuR" sceneMemberID="viewController">
+                <viewController title="Friends" id="dqa-tf-NuR" customClass="FriendViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xtS-if-q4p"/>
                         <viewControllerLayoutGuide type="bottom" id="ELQ-Df-7rc"/>
