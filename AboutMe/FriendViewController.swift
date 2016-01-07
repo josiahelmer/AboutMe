@@ -13,7 +13,7 @@ class FriendViewController : UIViewController
 {
 @IBAction func changeToVideogames(sender: UIButton)
 {
-    performSegueWithIdentifier("toRunnning", sender:
+    performSegueWithIdentifier("toVideogames", sender:
             sender)
 }
 

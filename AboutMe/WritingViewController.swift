@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class WritngViewController : UIViewController
+class WritingViewController : UIViewController
 {
     @IBAction func changeToFriends(sender: UIButton)
     {
